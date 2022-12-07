@@ -10,13 +10,13 @@ namespace BookLibrary.Servise
         {
             var libId = ChooseLibraryId();
             if (libId > 0)
-                TryToAddBook(libId);
+                TryToAddBook(libId - 1);
         }
         public static void PrintAllBooks()
         {
             var libId = ChooseLibraryId();
             if (libId > 0)
-                PrintLibraryBooks(libId);
+                PrintLibraryBooks(libId - 1);
         }
         private static int ChooseLibraryId()
         {
